@@ -1,0 +1,158 @@
+header {
+  margin: 1em 3em;
+}
+
+.banner {
+  height: 20em;
+  margin: 1em 0;
+  width: 100%;
+  background-image: url('../images/woman.jpg');
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 7em;
+  max-height: 3em;
+}
+
+footer {
+  padding: 2em;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+.text-and-image {
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner h1 {
+    text-align: center;
+  }
+  .text-and-image > .text {
+    margin: 2em 1em;
+  }
+
+  .phrases {
+    margin: 3em 1em;
+  }
+
+  .section--3 {
+    margin: 1em 0;
+    display: table;
+  }
+
+  .textbox {
+    border: 1px solid #efefef;
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .section--3 .text {
+    display: table-footer-group;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-and-image,
+  .phrases {
+    margin: 0 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0 auto;
+  }
+
+  .body {
+    margin: 5em auto;
+    max-width: 1200px;
+  }
+
+  .text-and-image {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 3em;
+  }
+
+  .phrases--top {
+    margin-bottom: 0;
+  }
+
+  .phrases > *:nth-child(1) {
+    margin-bottom: 1em;
+  }
+
+  .button {
+    width: 100%;
+    color: black;
+    margin: 1em 0;
+    background-color: #f2ff30;
+  }
+
+  .dotted {
+    min-height: 20em;
+
+    background-image: -webkit-repeating-radial-gradient(
+      center center,
+      rgba(65, 140, 252, 30),
+      rgba(65, 140, 252, 30) 1px,
+      transparent 1px,
+      transparent 100%
+    );
+    background-image: -moz-repeating-radial-gradient(
+      center center,
+      rgba(65, 140, 252, 30),
+      rgba(65, 140, 252, 30) 1px,
+      transparent 1px,
+      transparent 100%
+    );
+    background-image: -ms-repeating-radial-gradient(
+      center center,
+      rgba(65, 140, 252, 30),
+      rgba(65, 140, 252, 30) 1px,
+      transparent 1px,
+      transparent 100%
+    );
+    background-image: repeating-radial-gradient(
+      center center,
+      rgba(65, 140, 252, 30),
+      rgba(65, 140, 252, 30) 1px,
+      transparent 1px,
+      transparent 100%
+    );
+    -webkit-background-size: 5px 5px;
+    -moz-background-size: 5px 5px;
+    background-size: 5px 5px;
+    position: relative;
+    left: -10em;
+    margin: 4em auto 10em auto;
+    width: 80vw;
+    max-width: 1200px;
+    padding: 3em 0 5em 0;
+  }
+
+  .section--3 {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 3em;
+    margin-top: 4em;
+    position: relative;
+    left: 10em;
+  }
+
+  .section--3 .textbox {
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+}
