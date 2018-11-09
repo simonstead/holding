@@ -1,0 +1,84 @@
+body {
+    background: #F2F4F7;
+}
+
+.finder--container {
+  max-width: 30em;
+  margin: 5em auto;
+  background-color: white;
+  box-shadow: 0px 2px 1px 3px rgba(0,0,0,0.05);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.finder--label {
+  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue";
+  font-size: 1em;
+}
+
+.finder--input {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.finder--input input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 50%;
+}
+
+.finder--input button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 0 0 0;
+  width: 50%;
+  background-color: #00394E;
+  color: white;
+}
+
+.finder--results {
+  font-size: 1rem;
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+.finder--results--error {
+  color: red;
+  font-family: "AvenirNextLTW01-Medium";
+}
+
+.results--item {
+  margin-bottom: 1em;
+}
+
+.results--item > * {
+  width: 100%;
+}
+
+.results-item--store-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results-item--store-name {
+  font-family: "AvenirNextLTW01-Medium";
+}
+
+.results-item--store-link-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.results-item--store-link {
+  color: #282828;
+  border-bottom: 0;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-family: "AvenirNextLTW01-Medium";
+}
+
+.results-item--store-link:focus, .results-item--store-link:active {
+  outline: 4px solid #00394E;
+}
